@@ -3,7 +3,7 @@ MAINTAINER Stephen Liang "docker-maint@stephenliang.pw"
 
 ADD default.conf /etc/nginx/conf.d/default.conf
 
-ENV HEXO_VERSION 2.8
+ENV HEXO_VERSION 2.8.3
 
 # Grab dependencies
 RUN apt-get update && apt-get install -y curl
