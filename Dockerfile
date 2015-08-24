@@ -9,6 +9,8 @@ ENV HEXO_VERSION 2.8.3
 RUN apt-get update && apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup | bash - && apt-get update && apt-get install -y curl git nodejs
 RUN npm install -g hexo@${HEXO_VERSION}
+RUN npm install -g hexo-renderer-marked@0.1
+RUN npm install -g hexo-renderer-stylus@0.1
 
 # Create hexo base files
 RUN hexo init /usr/share/nginx/html
